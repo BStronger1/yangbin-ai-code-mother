@@ -1,0 +1,14 @@
+{
+  "register": true,
+  "login": true,
+  "real_model": "gpt-4.1-mini",
+  "application_create": true,
+  "sse_generation": true,
+  "preview": true,
+  "publish": true,
+  "zip_download": true,
+  "screenshot": true,
+  "first_stream_seconds": 1.17,
+  "generated_bytes": 1484,
+  "restart_persistence": true
+}

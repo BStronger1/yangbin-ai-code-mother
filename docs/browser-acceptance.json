@@ -1,0 +1,8 @@
+{
+  "browser_login": true,
+  "home": true,
+  "chat_page": true,
+  "page_refresh": true,
+  "generated_button": true,
+  "page_errors": []
+}

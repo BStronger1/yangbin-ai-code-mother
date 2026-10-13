@@ -1,0 +1,14 @@
+# Copy to a private external configuration file or use environment variables.
+# Upstream attribution: see NOTICE.md.
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+  data:
+    redis:
+      host: ${REDIS_HOST:127.0.0.1}
+      port: ${REDIS_PORT}
+      password: ${REDIS_PASSWORD}
+code:
+  deploy-host: ${DEPLOY_HOST}

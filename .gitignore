@@ -1,0 +1,68 @@
+### CUSTOM ###
+application-local.yml
+application-prod.yml
+tmp
+
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Private runtime and build artifacts
+.env
+.env.*
+!.env.example
+!**/.env.development
+!**/.env.production
+**/node_modules/
+**/dist/
+**/target/
+__pycache__/
+*.pyc
+*.log
+*.pid
+credentials.json
+secrets.json
+application-private.*
+data/
+logs/
+runtime/
+
+# Files created by the server bootstrap (never publish)
+run/
+frontend/
+app.jar
+mysql.cnf
+mysql-admin.cnf
+redis.conf
+bootstrap.tar.gz
+release.tar.gz
