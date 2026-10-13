@@ -19,5 +19,7 @@
 
 ![真实生成的测试页面](screenshots/generated.png)
 
-本次完整功能验收使用单文件 HTML 模式。多文件和 Vue 生成代码保留并通过编译；
-尚未逐一完成真实模型端到端验收。Pexels、DashScope 图像工具需单独配置服务密钥。
+追加验收：多文件和 Vue 模式各完成一个真实模型生成、构建与发布案例；Chromium 验证两种页面均成功渲染，计数按钮均能交互。完整结果见 mode-acceptance.json 和 browser-acceptance.json。
+
+验收后已清理独立合成账号及三个测试作品，保留无密钥的验收记录和截图。
+Pexels、DashScope 图像工具仍需单独配置服务密钥。

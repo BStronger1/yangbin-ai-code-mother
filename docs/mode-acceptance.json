@@ -1,0 +1,14 @@
+{
+  "multi_file": {
+    "generation": true,
+    "build_and_publish": true,
+    "http_preview": true,
+    "seconds": 5.85
+  },
+  "vue_project": {
+    "generation": true,
+    "build_and_publish": true,
+    "http_preview": true,
+    "seconds": 43.67
+  }
+}

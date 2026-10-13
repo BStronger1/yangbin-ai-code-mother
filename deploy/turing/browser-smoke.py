@@ -36,9 +36,19 @@ with sync_playwright() as p:
         page.wait_for_timeout(250)
         after=page.locator("body").inner_text()
         assert before != after,"Generated counter button did not change visible state"
+    mode_results={}
+    for item in state.get("additional_apps",[]):
+        page.goto(item["deploy_url"],wait_until="networkidle")
+        marker="YANGBIN_MULTI" if item["type"]=="multi_file" else "YANGBIN_VUE"
+        assert page.get_by_text(marker,exact=True).count()>0, item["type"]
+        before=page.locator("body").inner_text()
+        page.locator("button").first.click()
+        page.wait_for_timeout(250)
+        assert before != page.locator("body").inner_text(), item["type"]
+        mode_results[item["type"]]={"rendered":True,"button_interaction":True}
     assert not errors,errors
     result={"browser_login":True,"home":True,"chat_page":True,"page_refresh":True,
-            "generated_button":bool(state.get("deploy_url")),"page_errors":errors}
+            "generated_button":bool(state.get("deploy_url")),"additional_modes":mode_results,"page_errors":errors}
     (ROOT/"run/browser-acceptance.json").write_text(json.dumps(result,indent=2))
     print(json.dumps(result))
     browser.close()

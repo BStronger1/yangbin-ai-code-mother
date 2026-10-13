@@ -50,3 +50,5 @@ python3 deploy/turing/smoke.py 使用独立合成账号进行真实模型验收�
 浏览器验收需在 runtime/venv 安装 playwright，然后执行 runtime/venv/bin/python deploy/turing/browser-smoke.py。
 
 访问入口 http://172.16.185.103:18824，需校园网或相应 VPN。可直接注册普通账号使用。
+
+基础验收后，可执行 python3 deploy/turing/smoke-modes.py 对多文件和 Vue 模式各生成一个小型测试应用，产生额外模型调用费用。随后执行浏览器验收可验证全部三种模式的页面交互。

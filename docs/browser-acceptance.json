@@ -4,5 +4,15 @@
   "chat_page": true,
   "page_refresh": true,
   "generated_button": true,
+  "additional_modes": {
+    "multi_file": {
+      "rendered": true,
+      "button_interaction": true
+    },
+    "vue_project": {
+      "rendered": true,
+      "button_interaction": true
+    }
+  },
   "page_errors": []
 }
